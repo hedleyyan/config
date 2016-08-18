@@ -1,0 +1,23 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Auto Refresh",
+		"BracketHighlighter",
+		"Copy File Name",
+		"FindKeyConflicts",
+		"Markdown Extended",
+		"Markdown Preview",
+		"Monokai Neue",
+		"Octopress",
+		"Octopress Snippets",
+		"Package Control",
+		"SublimeREPL",
+		"SVN",
+		"SyncedSideBar",
+		"Typora Markdown App (OSX)"
+	]
+}

@@ -1,0 +1,8 @@
+2015-08-04 16:30:18
+Traceback (most recent call last):
+  File "./sublimesvn/threads.py", line 20, in run
+  File "./sublimesvn/status.py", line 552, in run_with_except
+  File "./sublimesvn/proc.py", line 945, in __init__
+  File "/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/genericpath.py", line 41, in isdir
+    st = os.stat(s)
+TypeError: coercing to Unicode: need string or buffer, NoneType found

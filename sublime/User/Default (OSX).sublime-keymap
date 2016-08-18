@@ -1,0 +1,55 @@
+[
+//=======================我的快捷键=======================//
+// 删除当前行
+{ "keys": ["super+d"], "command":"run_macro_file", "args": {"file":"Packages/Default/Delete Line.sublime-macro"} },
+// 与上行互换
+{ "keys": ["alt+up"], "command":"swap_line_up" },
+// 与下行互换
+{ "keys": ["alt+down"], "command":"swap_line_down" },
+// 复制选中行到行后
+{ "keys": ["super+alt+down"], "command":"duplicate_line" },
+// 复制当前行到上一行
+{ "keys": ["super+alt+up"], "command": "duplicate_line" },
+// 自动提示、补全
+{ "keys": ["alt+/"], "command":"auto_complete" },
+{ "keys": ["alt+/"], "command":"replace_completion_with_auto_complete", "context":
+	[
+		{ "key": "last_command", "operator":"equal", "operand": "insert_best_completion" },
+		{ "key": "auto_complete_visible", "operator":"equal", "operand": false },
+		{ "key": "setting.tab_completion", "operator":"equal", "operand": true }
+	]
+},
+// 光标移动到指定行
+{ "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+// 快速定位到选中的文字
+{ "keys": ["super+k"], "command": "find_under_expand_skip" },
+// 切换大小写
+{ "keys": ["super+shift+x"], "command": "upper_case" },
+{ "keys": ["super+shift+y"], "command": "lower_case" },
+ // 在当前行的下一行插入空行(这时鼠标可以在当前行的任一位置, 不一定是最后)
+{ "keys": ["shift+enter"], "command": "run_macro_file", "args": {"file": "Packages/Default/Add Line.sublime-macro"} },
+// 定位到对于的匹配符(譬如{})(从前面定位后面时,光标要在匹配符里面,后面到前面,则反之)
+// { "keys": ["super+shift+p"], "command": "move_to", "args": {"to": "brackets"} },
+// outline
+{ "keys": ["super+o"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+// 当前文件中的关键字(方便快速查找内容)
+{ "keys": ["super+alt+o"], "command": "show_overlay", "args": {"overlay": "goto", "text": "#"} },
+// open resource
+{ "keys": ["super+shift+r"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+// 文件内查找/替换
+{ "keys": ["super+f"], "command": "show_panel", "args": {"panel": "replace"} },
+// 全局查找/替换, 在查询结果中双击跳转到匹配位置
+{ "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+// SQL格式化
+{ "keys": ["super+shift+f"], "command": "format_sql" },
+// 复制当前文件
+{ "keys": ["super+alt+`"], "command": "clone_file" },
+
+// 在侧边栏显示文件
+{ "keys": ["ctrl+s"], "command": "reveal_in_side_bar" },
+
+
+{ "keys": ["ctrl+shift+d"], "command": "find_all_under" },
+{ "keys": ["super+g"], "command": "find_next" },
+{ "keys": ["super+shift+g"], "command": "find_prev" }
+]

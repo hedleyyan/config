@@ -55,7 +55,7 @@ plugins=(git)
 
 export PATH="/Users/hedley/Shell:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql-5.6.22-osx10.8-x86_64/bin:"
 # export MANPATH="/usr/local/man:$MANPATH"
-
+export CDPATH=$CDPATH:/Users/hedley/Elex/cok/SFS2X
 
 export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 
