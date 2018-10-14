@@ -5,7 +5,28 @@ export ZSH=/Users/hedley/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+ POWERLEVEL9K_MODE='awesome-patched'
+ ZSH_THEME="powerlevel9k/powerlevel9k"
+
+# zsh tmux settings
+# ZSH_TMUX_AUTOSTART='true'
+
+## Powerlevel9k Settings
+POWERLEVEL9K_HISTORY_BACKGROUND='green'
+
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=4
+
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
+POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%F{red} \Uf1d0 %f %F{yellow
+}❯ "
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history time)
+
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -49,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-autosuggestions) # zsh-syntax-highlighting)
 
 # User configuration
 
@@ -57,7 +78,7 @@ export PATH="/Users/hedley/Shell:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/u
 # export MANPATH="/usr/local/man:$MANPATH"
 export CDPATH=$CDPATH:/Users/hedley/Elex/cok/SFS2X
 
-export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,6 +108,13 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias sed="gsed"
 
+# zsh tmux settings
+# ZSH_TMUX_AUTOSTART='true'
+
 echo
 fortune
 echo
+
+
+#test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
